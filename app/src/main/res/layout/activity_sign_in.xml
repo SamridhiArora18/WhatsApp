@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayBackground"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp">
+
+        <ImageView
+            android:id="@+id/imgwhatsapp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/whatsapp_color_svgrepo_com" />
+
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgwhatsapp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Email"
+            android:padding="15dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:hint="Password"
+            android:padding="15dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtClickForSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassword"
+            android:layout_alignEnd="@id/txtPassword"
+            android:layout_marginTop="10dp"
+            android:text="Click For Sign Up" />
+
+        <Button
+            android:id="@+id/btnsSignIn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtClickForSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_btn"
+            android:padding="10dp"
+            android:text="sign In"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnsSignIn"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/google_color_svgrepo_com"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:text="Google"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/btnFacebook"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnsSignIn"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/facebook_color_svgrepo_com"
+            android:layout_marginTop="20dp"
+            android:background="@color/fb_color"
+            android:padding="10dp"
+            android:text="Facebook"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In with Phone"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/btnGoogle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
