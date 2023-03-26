@@ -24,7 +24,7 @@
             android:layout_marginTop="100dp"
             app:srcCompat="@drawable/whatsapp_color_svgrepo_com" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
             android:padding="15dp"
             android:paddingTop="10dp" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:padding="15dp"
             android:paddingTop="10dp" />
 
-        <TextView
+        <EditText
             android:id="@+id/txtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
