@@ -25,8 +25,10 @@
             app:srcCompat="@drawable/whatsapp_color_svgrepo_com" />
 
 
-        <TextView
-            android:id="@+id/txtEmail"
+
+        <EditText
+            android:id="@+id/etEmail"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imgwhatsapp"
@@ -36,11 +38,12 @@
             android:padding="15dp"
             android:paddingTop="10dp" />
 
-        <TextView
-            android:id="@+id/txtPassword"
+
+        <EditText
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtEmail"
+            android:layout_below="@+id/etEmail"
             android:layout_marginTop="10dp"
             android:background="@color/white"
             android:hint="Password"
@@ -51,8 +54,10 @@
             android:id="@+id/txtClickForSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtPassword"
-            android:layout_alignEnd="@id/txtPassword"
+
+            android:layout_below="@+id/etPassword"
+            android:layout_alignEnd="@id/etPassword"
+
             android:layout_marginTop="10dp"
             android:text="Click For Sign Up" />
 
