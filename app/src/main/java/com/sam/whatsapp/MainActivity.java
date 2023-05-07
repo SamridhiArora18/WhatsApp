@@ -16,6 +16,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.sam.whatsapp.Adapter.FragmentsAdapter;
 import com.sam.whatsapp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         auth = FirebaseAuth.getInstance();
         setContentView(binding.getRoot());
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+
+        binding.ViewPager.setAdapter(new FragmentsAdapter(getSupportFragmentManager()));
+        binding.tabLayout.setupWithViewPager(binding.ViewPager);
     }
 
     @Override
@@ -58,4 +67,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
 
     }
+
+
 }
