@@ -49,6 +49,6 @@ public class FragmentsAdapter extends FragmentPagerAdapter {
             Title="Calls";
         }
 
-        return super.getPageTitle(position);
+        return Title;
     }
 }
