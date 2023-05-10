@@ -1,6 +1,9 @@
 package com.sam.whatsapp.Adapter;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,7 +40,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Users users=list.get(position);
-        Picasso.get().load(users.getProfilepic()).placeholder(R.drawable.avatar);
+        Picasso.get().load(users.getProfilepic()).placeholder(R.drawable.avatar).into(holder.image);
+        holder.name.setText(users.getUsername());
+
 
     }
 
@@ -45,17 +50,18 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
     @Override
     public int getItemCount() {
         return list.size();
+
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView name,lastmessage;
         ImageView image;
-        public ViewHolder(View view) {
-            super(view);
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
 
-         name=view.findViewById(R.id.name);
-         lastmessage=view.findViewById(R.id.lastMessage);
-         image=view.findViewById(R.id.profile_image);
+         name=itemView.findViewById(R.id.name);
+         lastmessage=itemView.findViewById(R.id.lastMessage);
+         image=itemView.findViewById(R.id.profile_image);
 
         }
     }

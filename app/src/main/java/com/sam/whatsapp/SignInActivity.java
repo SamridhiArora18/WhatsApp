@@ -60,7 +60,6 @@ public class SignInActivity extends AppCompatActivity {
         binding.btnsSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(binding.etEmail.getText().toString()!=null&&binding.etPassword.getText().toString()!=null){
                     progressDialog.show();
                     auth.signInWithEmailAndPassword(binding.etEmail.getText().toString(), binding.etPassword.getText().toString())
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -78,12 +77,10 @@ public class SignInActivity extends AppCompatActivity {
                                 }
                             });
                 }
-                else{
-                    Toast.makeText(SignInActivity.this, "Fill the credentials", Toast.LENGTH_SHORT).show();
-                }
 
 
-            }
+
+
         });
 
 

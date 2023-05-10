@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         setContentView(binding.getRoot());
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://whatsapp-35c27-default-rtdb.asia-southeast1.firebasedatabase.app");
         DatabaseReference myRef = database.getReference("message");
 
         binding.ViewPager.setAdapter(new FragmentsAdapter(getSupportFragmentManager()));
