@@ -19,18 +19,19 @@
         app:civ_border_color="#FF000000"
         android:layout_marginLeft="5dp"
         android:padding="5dp"/>
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/profile_image"
-        android:text="Samridhi Arora"
-        android:padding="5dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
+
         <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:padding="5dp"
+            android:text="Samridhi Arora"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/lastMessage"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Last message"
