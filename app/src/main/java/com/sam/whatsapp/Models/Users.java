@@ -2,7 +2,7 @@ package com.sam.whatsapp.Models;
 
 public class Users {
 
-    String profilepic, username, mail, password ,userId, lastMessage;
+    String profilepic, username, mail, password ,userId, lastMessage, status;
 
     public Users(String profilepic, String username, String mail, String password, String userId, String lastMessage) {
         this.profilepic = profilepic;
@@ -13,15 +13,29 @@ public class Users {
         this.lastMessage = lastMessage;
     }
 
-    public Users(){}
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+//public Users(){}
 
     //signup constructor
-    public Users(String username, String mail, String password) {
+    public Users() {
         this.username = username;
         this.mail = mail;
         this.password = password;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getProfilepic() {
         return profilepic;
@@ -55,13 +69,7 @@ public class Users {
         this.password = password;
     }
 
-    public String getUserId(String key) {
-        return userId;
-    }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
 
     public String getLastMessage() {
         return lastMessage;
@@ -70,4 +78,6 @@ public class Users {
     public void setLastMessage(String lastMessage) {
         this.lastMessage = lastMessage;
     }
+
+
 }
