@@ -57,10 +57,19 @@ public class SignInActivity extends AppCompatActivity {
         mgoogleSignInClient= GoogleSignIn.getClient(this,gso);
 
 
-        binding.btnsSignIn.setOnClickListener(new View.OnClickListener() {
+        binding.btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    progressDialog.show();
+                if(binding.etEmail.getText().toString().isEmpty()){
+                    binding.etEmail.setError("Enter your Email");
+                    return;
+                }
+                if(binding.etPassword.getText().toString().isEmpty()){
+                    binding.etPassword.setError("Enter your Password");
+                    return;
+                }
+                    //progressDialog.show();
+
                     auth.signInWithEmailAndPassword(binding.etEmail.getText().toString(), binding.etPassword.getText().toString())
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
@@ -77,10 +86,6 @@ public class SignInActivity extends AppCompatActivity {
                                 }
                             });
                 }
-
-
-
-
         });
 
 
@@ -91,8 +96,6 @@ public class SignInActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(SignInActivity.this, SignupActivity.class);
                     startActivity(intent);
-
-
             }
         });
 
@@ -108,15 +111,10 @@ public class SignInActivity extends AppCompatActivity {
 
 
 
-
        if(auth.getCurrentUser()!=null){
            Intent intent= new Intent(SignInActivity.this,MainActivity.class);
             startActivity(intent);
-
         }
-
-
-
     }
 
     int RC_SIGN_IN=65;

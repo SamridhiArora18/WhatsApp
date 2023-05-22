@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -53,7 +52,7 @@ public class SignupActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
 
 
-                            Users user=new Users(binding.txtName.getText().toString(),binding.txtEmail.getText().toString(),binding.txtPassword.getText().toString());
+                            Users user=new Users();
 
                            String id=task.getResult().getUser().getUid();
                          //  Log.d("TAG","VALUE OF ID"+id);
