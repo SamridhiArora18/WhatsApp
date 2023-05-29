@@ -68,38 +68,40 @@
             android:layout_below="@+id/txtClickForSignUp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:background="@drawable/round_btn"
             android:padding="10dp"
             android:text="sign In"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            app:cornerRadius="4dp" />
 
         <Button
             android:id="@+id/btnGoogle"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnSignIn"
             android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/white"
             android:drawableLeft="@drawable/google_color_svgrepo_com"
             android:padding="10dp"
-            android:background="@color/white"
             android:text="Google"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            app:cornerRadius="4dp" />
 
 
         <Button
             android:id="@+id/btnFacebook"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnSignIn"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
-            android:background="@color/white"
+            android:backgroundTint="@color/fb_color"
             android:drawableLeft="@drawable/facebook_color_svgrepo_com"
             android:padding="10dp"
             android:text="Facebook"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="4dp" />
 
         <TextView
             android:layout_width="wrap_content"

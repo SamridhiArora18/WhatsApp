@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "269656974856",
+    "firebase_url": "https://whatsapp-35c27-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "whatsapp-35c27",
     "storage_bucket": "whatsapp-35c27.appspot.com"
   },
@@ -14,7 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "269656974856-ftv1jj4151iq16g2mde4eltbo5sb3igj.apps.googleusercontent.com",
+          "client_id": "269656974856-nhefov2eraqh1ogbr7fti5f2o35k9qqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sam.whatsapp",
+            "certificate_hash": "303cff3e3bfa3852d8c00583a7b35ac94566ff98"
+          }
+        },
+        {
+          "client_id": "269656974856-cq8g79hltt1g6b39ferqa84hcr43v4la.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +36,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "269656974856-ftv1jj4151iq16g2mde4eltbo5sb3igj.apps.googleusercontent.com",
+              "client_id": "269656974856-cq8g79hltt1g6b39ferqa84hcr43v4la.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
