@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/grayBackground"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".SignupActivity">
 
     <RelativeLayout
@@ -55,6 +56,7 @@
             android:background="@color/white"
             android:hint="Password"
             android:padding="15dp"
+            android:password="true"
             android:paddingTop="10dp" />
 
         <TextView
@@ -67,52 +69,53 @@
             android:text="Already have account" />
 
         <Button
-            android:id="@+id/btnsSignUP"
+            android:id="@+id/btnSignUP"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txtAlready"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:background="@drawable/round_btn"
             android:padding="10dp"
             android:text="sign up"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            app:cornerRadius="4dp" />
 
         <Button
             android:id="@+id/btnGoogle"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnsSignUP"
+            android:layout_below="@+id/btnSignUP"
             android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/google_color_svgrepo_com"
             android:padding="10dp"
-            android:background="@color/white"
             android:text="Google"
-            android:textColor="@color/black" />
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            app:cornerRadius="4dp" />
 
 
         <Button
             android:id="@+id/btnFacebook"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btnsSignUP"
-            android:layout_alignParentRight="true"
-            android:drawableLeft="@drawable/facebook_color_svgrepo_com"
+            android:layout_below="@+id/btnSignUP"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
-            android:background="@color/fb_color"
+            android:drawableLeft="@drawable/facebook_color_svgrepo_com"
             android:padding="10dp"
             android:text="Facebook"
-            android:textColor="@color/black" />
+            android:backgroundTint="@color/fb_color"
+            android:textColor="@color/white"
+            app:cornerRadius="4dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up with Phone"
-            android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/btnGoogle"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"/>
-
+            android:layout_marginTop="20dp"
+            android:text="Sign Up with Phone"
+            android:textColor="@color/colorPrimaryDark" />
 
     </RelativeLayout>
 

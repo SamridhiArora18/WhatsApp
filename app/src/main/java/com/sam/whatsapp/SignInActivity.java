@@ -54,7 +54,7 @@ public class SignInActivity extends AppCompatActivity {
                         .requestEmail()
                                 .build();
 
-        mgoogleSignInClient= GoogleSignIn.getClient(this,gso);
+        mgoogleSignInClient = GoogleSignIn.getClient(this,gso);
 
 
         binding.btnSignIn.setOnClickListener(new View.OnClickListener() {
@@ -115,11 +115,11 @@ public class SignInActivity extends AppCompatActivity {
            Intent intent= new Intent(SignInActivity.this,MainActivity.class);
             startActivity(intent);
         }
-    }
+    }//oncreate ends here
 
     int RC_SIGN_IN=65;
     private void signIn(){
-        Intent signInIntent= mgoogleSignInClient.getSignInIntent();
+        Intent signInIntent = mgoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent,RC_SIGN_IN);
     }
 

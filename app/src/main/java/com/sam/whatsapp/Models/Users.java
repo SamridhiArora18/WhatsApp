@@ -13,6 +13,8 @@ public class Users {
         this.lastMessage = lastMessage;
     }
 
+
+
     public String getUserId() {
         return userId;
     }
@@ -20,10 +22,12 @@ public class Users {
     public void setUserId(String userId) {
         this.userId = userId;
     }
-//public Users(){}
+   public Users(){
+
+  }
 
     //signup constructor
-    public Users() {
+    public Users(String username, String mail, String password) {
         this.username = username;
         this.mail = mail;
         this.password = password;
